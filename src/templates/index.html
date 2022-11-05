@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Restaurant Apps Starter Project</title>
+</head>
+<body>
+  <div class="nav-items-mobile-content d-none">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="#">Favorite</a></li>
+      <li><a href="https://www.facebook.com/nonii.azizah.9" target="_blank">About</a></li>
+    </ul>
+  </div>
+  <!-- NAVIGASI -->
+  <nav class="nav-container">
+    <div class="nav-brand">
+      <p class="nav-brand-title">
+        Delicious Resto
+      </p>
+    </div>
+    <div class="nav-items">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Favorite</a></li>
+        <li><a href="https://www.facebook.com/nonii.azizah.9" target="_blank">About</a></li>
+      </ul>
+    </div>
+    <div class="nav-items-mobile ">
+      <div class="nav-items-mobile-icon" alt="" onclick="toggleMobile()"></div>
+    </div>
+  </nav>
+  <!-- AKHIR NAVIGASI -->
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-content-title">
+        Delicious Restaurant
+      </h1>
+      <p>Best restaurant menu !</p>
+      <a href="#main" style="    background: white;
+      padding: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      text-decoration: none;
+      margin-top: 10px;
+      color: orange;
+      font-weight: 500;">here</a>
+    </div>
+    
+  </section>
+  <!-- AKHIR HERO -->
+  
+  <!-- RESTAURANT -->
+  <section class="restaurant" id="main">
+    <center>
+      <h2>Choose ur Restaurant</h2>
+    </center>
+    <div class="restaurant-container">
+        
+    </div>
+  </section>
+  <!-- AKHIR RESTAURANT -->
+
+  <!-- FOOTER -->
+  <footer style="background: #eee;
+    padding: 15px;
+    margin-top: 100px;
+    ">
+    <center>
+      Copyright @2020 Delicious Resto
+    </center>
+  </footer>
+  <!-- AKHIR FOOTER -->
+
+
+
+  <!-- SCRIPT -->
+  <script>
+    
+    let init = false;
+    function toggleMobile(){
+      let content = document.querySelector(".nav-items-mobile-content");
+      if(init == false){
+        content.classList.remove('d-none')
+        init = true;
+      }else{
+        content.classList.add('d-none')
+        init = false;
+      }
+    }
+  </script>
+  <!-- AKHIR SCRIPT -->
+</body>
+</html>
