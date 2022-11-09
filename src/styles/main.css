@@ -42,14 +42,15 @@
   }
   .nav-items ul li a{
     text-decoration: none;
-    color: gray
+    color: gray;
+    padding: 15px 15px;
   }
   .nav-items ul li a:hover{
     color: red
   }
   .hero{
     background-image: url('../public/images/heros/hero-image_2.jpg');
-    height: 90vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -82,7 +83,7 @@
   }
   .restaurant-card{
       border-radius: 10px;
-      width: 24%;
+      width: 32%;
       border: 1px solid #d3d3d3;
   }
   .restaurant-card-content{
@@ -108,8 +109,20 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    height: 45px;
   }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+
+  @media only screen and (max-width: 768px) {
+    body{
+      padding: 0;
+        margin: 0;
+        font-family: cursive;
+    }
+    .restaurant-card{
+      width: 50%;
+    }
+  }
+@media screen and (max-width: 576px){
 	body{
     padding: 0;
       margin: 0;
@@ -138,20 +151,28 @@
   }
   .nav-items-mobile-content ul li a{
     text-decoration: none;
-    color: gray
+    color: gray;
+    padding: 15px 15px;
   }
   .restaurant-card{
     width: 100%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-	body{
-    padding: 0;
-      margin: 0;
-      font-family: cursive;
-  }
-  .restaurant-card{
-    width: 40%;
-  }
+
+
+.skip-to-content-link {
+  background: red;
+  color: white;
+  height: 30px;
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  text-decoration: none;
+  z-index: 1000;
 }
 
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
