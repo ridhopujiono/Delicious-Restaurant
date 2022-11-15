@@ -11,12 +11,16 @@
     display: flex;
     height: 60px;
     justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
     background: white;
     box-shadow: 2px 2px 5px 0px #cacaca;
     position: fixed;
     width: 100%;
+  }
+  .nav-brand{
+    padding-left: 15px;
+  }
+  .nav-items-mobile-content ul{
+    padding-left: 0;
   }
   .nav-brand-title{
     font-size: 19px;
@@ -28,11 +32,10 @@
     display: none
   }
   .nav-items-mobile-icon{
-    background: url('../public/icons/ham.png');
-    background-repeat: no-repeat;
-    width: 38px;
+    border: none;
+    background: transparent;
     background-size: contain;
-    height: 38px;
+    font-size: 38px;
     margin-right: 30px;
     padding: 4px;
   }
@@ -69,6 +72,7 @@
   .hero-content-title{
     font-size: 40px;
     margin-bottom: 0;
+    text-align: center;
   }
   .restaurant{
     margin-top: 50px;

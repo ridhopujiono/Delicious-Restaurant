@@ -2,20 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant Apps Starter Project</title>
 </head>
 <body>
   <a class="skip-to-content-link" href="#main">
     Skip to content
   </a>
-  <div class="nav-items-mobile-content d-none">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="#">Favorite</a></li>
-      <li><a href="https://www.facebook.com/nonii.azizah.9" target="_blank">About</a></li>
-    </ul>
-  </div>
   <!-- NAVIGASI -->
   <nav class="nav-container">
     <div class="nav-brand">
@@ -31,7 +24,14 @@
       </ul>
     </div>
     <div class="nav-items-mobile ">
-      <div class="nav-items-mobile-icon" alt="" onclick="toggleMobile()"></div>
+      <button class="nav-items-mobile-icon" alt="" onclick="toggleMobile()">&#9776;</button>
+    </div>
+    <div class="nav-items-mobile-content d-none">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Favorite</a></li>
+        <li><a href="https://www.facebook.com/nonii.azizah.9" target="_blank">About</a></li>
+      </ul>
     </div>
   </nav>
   <!-- AKHIR NAVIGASI -->
